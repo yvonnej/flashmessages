@@ -1,0 +1,13 @@
+{
+	"name": "yvonnej/flashmessages",
+	"type": "library",
+	"description": "PHP class for create and display flashmessages",
+	"keywords": ["flasmessages", "message", "flash"],
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4"
+	},
+	"autoload": {
+		"psr-4": { "Yvos\\": "src/" }
+	}
+}
