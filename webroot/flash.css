@@ -1,0 +1,34 @@
+.flash p {
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	width: 50%;
+	text-align: center;
+}
+
+.error {
+	border-color: red;
+	color: red;
+}
+
+.success {
+	border-color: green;
+	color: green;
+}
+
+.notice {
+	border-color: blue;
+	color: blue;
+}
+
+.warning {
+	border-color: yellow;
+	color: yellow;
+}
+
+.eget {
+	border-color: orange;
+	color: orange;
+}
+
+
