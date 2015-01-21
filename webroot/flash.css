@@ -1,33 +1,39 @@
-.flash p {
-	padding: 5px;
+#flash p {
+	padding: 3px;
 	border-width: 1px;
 	border-style: solid;
+	border-radius: 5px;
 	width: 50%;
 	text-align: center;
 }
 
-.error {
+#flash .error {
 	border-color: red;
+	background-color: #ffdbdb;
 	color: red;
 }
 
-.success {
+#flash .success {
 	border-color: green;
+	background-color: #dbffdb;
 	color: green;
 }
 
-.notice {
+#flash .notice {
 	border-color: blue;
+	background-color: #dbdbff;
 	color: blue;
 }
 
-.warning {
+#flash .warning {
 	border-color: yellow;
+	background-color: #ffffdb;
 	color: yellow;
 }
 
-.eget {
+#flash .eget {
 	border-color: orange;
+	background-color: #ffeddb;
 	color: orange;
 }
 

@@ -15,6 +15,7 @@ class CFlashMessage {
 	 * Add message to session
 	 * 
 	 * @param string $message to be shown
+	 * @param string $type set the class name
 	 * @return void 
 	 */
 	public function addMessage($message, $type) {
@@ -35,7 +36,7 @@ class CFlashMessage {
 	/**
 	 * Message of type error
 	 * 
-	 * @param string $message 
+	 * @param string $message to be shown
 	 * @return void 
 	 */
 	public function error($message) {
@@ -46,7 +47,7 @@ class CFlashMessage {
 	/**
 	 * Message of type success
 	 * 
-	 * @param string $message 
+	 * @param string $message to be shown
 	 * @return void 
 	 */
 	public function success($message) {
@@ -57,7 +58,7 @@ class CFlashMessage {
 	/**
 	 * Message of type notice
 	 * 
-	 * @param string $message 
+	 * @param string $message to be shown
 	 * @return void 
 	 */
 	public function notice($message) {
@@ -68,7 +69,7 @@ class CFlashMessage {
 	/**
 	 * Message of type warning
 	 * 
-	 * @param string $message 
+	 * @param string $message to be shown
 	 * @return void 
 	 */
 	public function warning($message) {
@@ -79,24 +80,35 @@ class CFlashMessage {
 	/**
 	 * Custom message
 	 * 
-	 * @param string $message 
+	 * @param string $message to be shown
+	 * @param string $type set the class name
 	 * @return void 
 	 */
-	public function message($message, $type) {
+	public function message($message, $type="eget") {
 		$this->addMessage($message, $type);
 	}  
 	
 	
+	/**
+	 * Delete messages from session array
+	 *
+	 * @return void
+	 */
 	public function deleteMessage() {
 		
 		$this->session->set('flashmessages', []);
 	}
 	
+	/**
+	 * View messages
+	 *
+	 *@return string as html
+	 */
 	public function getMessage() {
 		
 		$flashmessages = $this->session->get('flashmessages');
 		
-		$html = "<div class='flash'>";
+		$html = "<div id='flash'>";
 		
 		foreach($flashmessages as $message) {
 			$html .= "<p class='" . $message['type'] . "'>" . $message['message'] . "</p>";
