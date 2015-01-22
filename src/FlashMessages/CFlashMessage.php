@@ -110,8 +110,11 @@ class CFlashMessage {
 		
 		$html = "<div id='flash'>";
 		
-		foreach($flashmessages as $message) {
-			$html .= "<p class='" . $message['type'] . "'>" . $message['message'] . "</p>";
+		if($flashmessages) {
+			
+			foreach($flashmessages as $message) {
+				$html .= "<p class='" . $message['type'] . "'>" . $message['message'] . "</p>";
+			}
 		}
 		
 		$html .= "</div>";
