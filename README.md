@@ -1,4 +1,5 @@
-PHP class for create and display flashmessages. It is created as a module for Anax-MVC, see https://github.com/mosbth/Anax-MVC.
+PHP class for create and display flashmessages. 
+It is created as a module for Anax-MVC, see https://github.com/mosbth/Anax-MVC.
 
 By Yvonne I Johansson
 
