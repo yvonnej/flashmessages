@@ -1,3 +1,5 @@
+[![Build Status](https://scrutinizer-ci.com/g/yvonnej/flashmessages/badges/build.png?b=master)](https://scrutinizer-ci.com/g/yvonnej/flashmessages/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yvonnej/flashmessages/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/yvonnej/flashmessages/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/yvonnej/flashmessages/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/yvonnej/flashmessages/?branch=master)
+
 PHP class for create and display flashmessages.
 It is created as a module for Anax-MVC, see https://github.com/mosbth/Anax-MVC.
 https://travis-ci.org/yvonnej/flashmessages.svg?branch=master
