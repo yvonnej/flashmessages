@@ -9,7 +9,7 @@ namespace Yvos\FlashMessages;
  */
 class CFlashMessage {
 	
-	use \Anax\Di\TInjectable;
+	use \Anax\DI\TInjectable;
 	
 	/**
 	 * Add message to session
